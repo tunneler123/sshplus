@@ -5,6 +5,7 @@ apt-get install screen
 ##python install
 apt-get install python
 ###Work
+chmod a+x script.py
 screen -s python ./script.py
 
 ###TUNNELER###
