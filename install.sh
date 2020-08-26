@@ -7,5 +7,5 @@ apt-get install python
 ###Work
 chmod a+x script.py
 screen python ./script.py
-Ctrl+a d
+Ctrl+a+d
 ###TUNNELER###
