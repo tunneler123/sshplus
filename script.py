@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import socket, threading, thread, select, signal, sys, time
 from os import system
 system("clear")
