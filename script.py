@@ -8,7 +8,7 @@ IP = '0.0.0.0'
 try:
    PORT = int(sys.argv[1])
 except:
-   PORT = 1
+   PORT = 80
 PASS = ''
 BUFLEN = 8196 * 8
 TIMEOUT = 60
@@ -16,7 +16,7 @@ MSG = 'PHTUNNELER'
 COR = '<font color="blue">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 200 " + str(COR) + str(MSG) + str(FTAG) + "\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 Switching Protocols\r\nContent-Length: 1048576000000\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
