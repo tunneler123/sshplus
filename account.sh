@@ -16,4 +16,9 @@ echo -e "     Host: $IP"
 echo -e "     Username: $Login "
 echo -e "     Password: $Pass"
 echo -e "     Expiration: $exp"
-#echo -e "     Protocol: TCP" | lolcat
+#echo -e "     Protocol: TCP"
+#echo -e "Port OpenSSH: 22,444"
+#echo -e "Port Dropbear: 143,3128"
+#echo -e "Port SSL: 443"
+#echo -e "Port Squid: 8000,8080"
+#echo -e "+- -- --=[ http://$IP:81/client.ovpn ]=-- -- -+" | lolcat
