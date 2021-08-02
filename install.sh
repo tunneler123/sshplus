@@ -9,17 +9,17 @@ apt-get install screen -y
 apt-get install python -y
 ###Work
 chmod a+x script.py
+cd /usr/bin
+wget -O account https://raw.githubusercontent.com/tunneler123/sshplus/master/account.sh
 screen -dmS screen python ./script.py
-cat <<EOF >>/usr/bin/start
+cat <<EOF >>start
 screen -dmS screen python /root/script.py
 EOF
-cat <<EOF >>/usr/bin/stop
+cat <<EOF >>stop
 pkill python
 EOF
 chmod +x start
 chmod +x stop
-cd /usr/bin
-wget -O account https://raw.githubusercontent.com/tunneler123/sshplus/master/account.sh
 chmod +x account
 ###TUNNELER###
 clear
